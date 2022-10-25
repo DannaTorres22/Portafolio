@@ -6,11 +6,9 @@
 <title>Experiencia</title>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="../css/style.css"/>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
-<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+
 
 <!-- Font Google -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -19,31 +17,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<%-include('template/header');%> 
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container"> <a class="navbar-brand navbar-logo" href="#"> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="index">Inicio</a></li>
-          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Sobre mi</a></li>
-          <li class="nav-item"> <a class="nav-link" href="experiencia">Experiencia</a></li>
-          <li class="nav-item"> <a class="nav-link" href="hobbies">Hobbies</a></li>
-          <li class="nav-item"> <a class="nav-link" href="formulario" >Contactame</a> </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- End Navbar --> 
+<body> 
 
 <!-- Banner Image -->
 <div class="banner text-center" data-scroll-index='0'>
   <div class="banner2-overlay">
     <div class="container">
       <h1 class="text-capitalize">Experiencia y Educación</h1>
-      <a href="#" class="banner-btn" data-scroll-nav="4">Contactame</a> </div>
+      <a href="#" class="banner-btn">Contactame</a> </div>
   </div>
 </div>
 
@@ -51,7 +34,7 @@
 
 
 <!-- Services -->
-<div class="services section-padding bg-grey" data-scroll-index='2'>
+<div class="services section-padding bg-grey">
   <div class="container">
     <div class="row">
       <div class="col-md-12 section-title text-center">
@@ -84,8 +67,11 @@
             <h3 class="title-box">Experiencia Laboral</h3>
             <h4>Asistente de programación</h4>
             <p>Jardin Infantil Pasitos De Amor, Feb 2020 - Presente <br>Creación de sitios web para el gestionamiento de procesos del Jardín Infantil 
-              Pasitos De Amor (MySQL, HTML, CSS, PHP).</p>
-              
+              Pasitos De Amor (MySQL, HTML, CSS, PHP).</p><br>
+              <div class="icon-text">
+              <h4>Analisis y desarrollo de sistemas de información - Viapin</h4>
+            <br>Gestionamiento y documentacion de procesos y analisis de datos</p>
+              </div>
           </div>
         </div>
       </div>
@@ -96,15 +82,6 @@
 
 <!-- End Services -->  
 
-<footer class="footer-copy">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <p>2022 &copy; created by Danna Torres <a href="https://github.com/DannaTorres22/Portafolio_Danna_Torres.git" target="_blank" rel="dofollow">Portafolio GitHub</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
 <!-- owl carousel js --> 
@@ -241,5 +218,7 @@ $( ".cover-bg" ).each(function() {
 });
 
 </script>
+<%-include('template/footer');%> 
 </body>
+
 </html>
