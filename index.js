@@ -7,24 +7,9 @@ app.set('view engine','ejs')
 
 app.set('views',__dirname + '/views')
 
-app.get('/', (req, res) => {
-   res.render('index')
- })
- app.get('/index', (req, res) => {
-  res.render('index')
-})
+//rutas
 
- app.get('/experiencia', (req, res) => {
-    res.render('experiencia')
-  })
-
-  app.get('/hobbies', (req, res) => {
-    res.render('hobbies')
-  })
-  app.get('/formulario', (req, res) => {
-    res.render('formulario')
-  })
-
+app.use('/ap',require('./router/RutasWeb'));
 
 app.use((req,res,next)=>{
 res.status(404).sendFile(__dirname + '/public/404.html')
